@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(250, 244, 244);
+}
+#main-heading{
+    line-height: 4rem;
+    background-color: rgb(251, 211, 217);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.game{
+    display: flex;
+    /* background-color: yellow; */
+    /* align-items: center; */
+    justify-content: center;
+}
+.gamegrid{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    margin: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8em;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(250, 237, 228);
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.gamecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.gameinfo{
+    width: 20vw;
+    padding: 20px;
+    text-align: center;
+}
+.btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0px 6px;
+    margin: 5px;
+    background-color: pink;
+    box-shadow: 7px 5px 10px 10px 2px green;
+}
+.info{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family:'Courier New', Courier, monospace;
+}
+.btn:hover{
+    background-color: palevioletred;
+    color: white;
+}
+.gameimg img{
+    display: none;
+}
+@media (max-width:700px){
+    .box{
+        font-size: 4rem;
+    }
+}
+@media (max-width:600px){
+    .game{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        font-size: 3rem;
+    }
+}
